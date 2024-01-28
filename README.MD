@@ -30,7 +30,8 @@ Repository contain project for db class of 2023, 3rd year.
    - phone - varchar(20)NOT NULL
    - date_joined - timestamp()
    - last_login - timestamp()
-   - role - OtO(Permissions)
+   - role - OtO(User role)
+   - permission OtO(Permissions)
 
 2. Office
    - id - integer() NOT NULL
@@ -48,12 +49,12 @@ Repository contain project for db class of 2023, 3rd year.
 4. Object 
    - id - integer() NOT NULL
    - object_type - varchar(20)NOT NULL, choices
-   - description - text()NOT NULL
+   - description - text() NOT NULL
    
 5. Agent
    - id - integer() NOT NULL
    - office - MtO(Office)NULL
-   - user - OtO(User)is staff = TRUE
+   - user - OtO(User) is staff = TRUE
 
 6. Contract
    - id - integer() NOT NULL
@@ -91,3 +92,4 @@ Repository contain project for db class of 2023, 3rd year.
 11. UserRole
     - id - integer() NOT NULL
     - role - varchar(15) NOT NULL, NOT BLANK
+
